@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JOIN</title>
+</head>
+
+<style>
+
+    h3,b{
+    color:blue;
+    }
+</style>
+<body style="background-color:green;">
+
+<marquee style="color:blue;">WELCOME TO GDEV </marquee>
+<section class="row">
+    <div class="col-md-6">
+
+        <h3>REGISTER</h3>
+        <B>{{success_msg}}</B> <br>
+         <B>{{error_msg}}</B> <br>
+
+        <form action="/gdev" method="post">
+            <input type="email" name="Email" placeholder="Your Email" class="form-control"> <br>
+            <b style="color:red;">{{email_msg}}</b> <br>
+
+            <input type="password" name="password" placeholder="Your password" class="form-control"> <br>  <BR>
+            <input type="password" name=" confirm password" placeholder="Your password" class="form-control"> <br>
+            <b style="color:red;">{{msg}}</b> <br>
+            <input type="REG NO" NAME="REG NO" PLACEHOLDER=" YOUR REG NO" class="form-control"> <br> <br>
+
+            <a href="payment.html"> <input type="SUBMIT"  class="btn btn warning"></a>
+        </form>
+    </div>
+
+</section>
+
+</body>
+</html>

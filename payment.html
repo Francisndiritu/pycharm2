@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pay</title>
+</head>
+<body>
+
+<marquee style="color:blue;">WELCOME TO GDEV </marquee>
+<section class="row">
+    <div class="col-md-6">
+         {%if session['key'] %}
+
+        welcome{{session['key']}}
+
+         </form>
+
+        <form action="/mpesa_payment" method="post">
+            <input type="tel" name="Phone" placeholder="Your phone" class="form-control"> <br>
+
+
+            <input type="text" name="Amount" value="{{row[4]}}"> <br>  <BR>
+
+
+            <input type="SUBMIT" value="PAY NOW" CLASS="btn btn-success">
+
+        </form>
+        {%else%}
+
+        <b>Please register <a href="/gdev.html">Here</a> TO MAKE PAYMET</b>
+
+        {%endif%}
+
+
+
+
+
+
+
+    </div>
+
+</section>
+</body>
+</html>
